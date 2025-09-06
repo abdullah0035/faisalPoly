@@ -42,6 +42,7 @@ export const dashboardRoutes = [
   '/materials',
   '/settings',
   '/quality',
+  '/stock-movement'
   
 ]
 
@@ -76,9 +77,14 @@ export const sidebarItems = [
     href: '/production'
   },
   {
-    name: 'Inventory',
+    name: 'WareHouse',
     icon: RiStackFill,
     href: '/inventory'
+  },
+  {
+    name: 'WareHouse Movement',
+    icon: RiStackFill,
+    href: '/stock-movement'
   },
   {
     name: 'Quality Control',

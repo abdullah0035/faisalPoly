@@ -18,6 +18,8 @@ import AddPurchaseOrder from '../pages/purchase/addPurchaseOrder'
 import PurchaseList from '../pages/purchase/purchaseList'
 import AddRawMaterial from '../pages/material/addMaterial'
 import QualityCheckList from '../pages/quality/qualityCheckList'
+import InventoryList from '../pages/inventory/inventoryList'
+import StockMovementList from '../pages/inventory/stockMovementList'
 
 // Root redirect component
 const RootRedirect = () => {
@@ -59,7 +61,13 @@ const Routing = () => {
             <Route path='add' element={<AddRawMaterial />} />
             <Route path='list' element={<PurchaseList />} />
           </Route> 
+          <Route path='/warehouse/'>
+            <Route path='add' element={<AddRawMaterial />} />
+            <Route path='list' element={<PurchaseList />} />
+          </Route> 
           <Route path='/quality' element={<QualityCheckList/>}/>
+          <Route path='/inventory' element={<InventoryList/>}/>
+          <Route path='/stock-movement' element={<StockMovementList/>}/>
            
             {/* <Route path='add' element={<AddQualityCheck />} /> */}
             {/* <Route path='list' element={<PurchaseList />} /> */}
