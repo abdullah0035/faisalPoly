@@ -39,7 +39,9 @@ export const dashboardRoutes = [
   '/supplier',
   '/accounts',
   '/reports',
-  '/settings'
+  '/materials',
+  '/settings',
+  '/quality',
   
 ]
 
@@ -81,7 +83,20 @@ export const sidebarItems = [
   {
     name: 'Quality Control',
     icon: RiShieldCheckLine,
-    href: '/quality'
+    href: '/quality',
+    //  subItems: [
+    //   {
+    //     name: 'Add Quality Details',
+    //     icon: RiAddLine,
+    //     href: '/quality/add'
+    //   },
+    //   {
+    //     name: 'purchases Detail',
+    //     icon: RiListCheck,
+    //     href: '/purchases/list'
+    //   },
+     
+    // ]
   },
   {
     name: 'Labour',
@@ -142,16 +157,6 @@ export const sidebarItems = [
         icon: RiListCheck,
         href: '/purchases/list'
       },
-      {
-        name: 'purchases Reciept',
-        icon: RiListCheck,
-        href: '/purchases/receiept'
-      },
-      {
-        name: 'Salaries Management',
-        icon: RiListCheck,
-        href: '/purchases/salaries'
-      }
      
     ]
   },
@@ -159,6 +164,18 @@ export const sidebarItems = [
     name: 'Buyers',
     icon: RiUser3Fill,
     href: '/buyers'
+  },
+  {
+    name: 'Materials',
+    icon: RiUser3Fill,
+    href: '/materials',
+    subItems: [
+      {
+        name: 'Add Raw Materials',
+        icon: RiAddLine,
+        href: '/materials/add'
+      },
+    ]
   },
   {
     name: 'Suppliers',
